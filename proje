@@ -1,0 +1,26 @@
+Önceki araProje miz bir su tesisatçısının müşteri kayıtlarıdır,
+bu tesisatçı bu müşterilerinin ihtiyaçlarına göre hizmet vermektedir ve
+bu hizmet karşılığında para tahsil etmektedir.
+önceki projeye ek olarak
+yeni bir pojo olusturun alanlar:
+int satisId // oluşturacağımız dosyanın kayıtlarını tutmak için(diğerinde olduğu gibi)
+int musID // bu alan ise diğer (önceki dosyadaki id dir) çünkü yapılan işin kime yapıldığı
+    bu musID sayesine analaşılabilir.
+String tarih; // bu alan locale date yardımı ile otamatik doldurulsun(işlemin yapıldığı günün tarihi)
+String islem; // bu alan sucu ustanın yaptığı işlemi tanımlayacak
+int tutar; // işlemin tutarı
+int tahsilat; // ustanın tahsil ettiği para, 100euro iş yapılmış 30 euro tahsil edilmiş ise
+        bunun anlamı müşterinin 70 euro borcu var demektir
+boolean durum; // kayıt silme durumu için kullanın, diğer dosyada olduğu gibi // enum kullanalım
+yeni classlara ihtiyacınız olacak
+-FileHizmet
+-İslemHizmet(InterIslem implement eder)
+-Hizmetler pojo class ı
+
+Bir ana menüden (önceki ve bu na alt menu olarak ) erişilebilir
+-tercihe bağlı raporlar,
+-seçilen müşterinin borç / alacak durumu
+-sucu ustanın toplam satış miktarı
+-sucu ustanın toplam alaçağı tutar
+-Müşteriler hesap dökümü
+-Borçlu Müşteriler
